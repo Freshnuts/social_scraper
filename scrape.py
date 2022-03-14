@@ -2,7 +2,6 @@ from openpyxl import Workbook
 import os
 import sys
 
-# Excel Sheet (Ugly & Inefficient)
 workbook = Workbook()
 sheet = workbook.active
 
@@ -25,8 +24,6 @@ for i in range(0,10):
     # Scraper for Number
     count_result = os.popen(curl_count).read()
     print count_result
-
-
 
 
     print "current user: ", i
